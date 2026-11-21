@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Card - Flex Layout</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f3f5f8;
+        }
+
+        .pricing-card {
+            display: flex;
+            flex-direction: column;
+            width: 320px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .card-header {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #2176e8;
+            color: #ffffff;
+            padding: 25px 20px;
+            gap: 5px;
+        }
+
+        .card-header h3 {
+            font-size: 16px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        .card-header h2 {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px 25px;
+            gap: 25px;
+        }
+
+        .price {
+            display: flex;
+            align-items: baseline;
+            justify-content: center;
+            gap: 5px;
+        }
+
+        .price .amount {
+            font-size: 36px;
+            font-weight: bold;
+            color: #111111;
+        }
+
+        .price .duration {
+            font-size: 16px;
+            color: #777777;
+            font-weight: bold;
+        }
+
+        .features {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            list-style: none;
+            gap: 15px;
+            font-size: 16px;
+            color: #222222;
+        }
+
+        .features li {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .checkmark {
+            color: #008000;
+            font-weight: bold;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 14px;
+            background-color: #2176e8;
+            color: #ffffff;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+
+        .btn:hover {
+            background-color: #185ec0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="pricing-card">
+        <div class="card-header">
+            <h3>MOST POPULAR</h3>
+            <h2>Pro</h2>
+        </div>
+
+        <div class="card-body">
+            <div class="price">
+                <span class="amount">&#8377;499</span>
+                <span class="duration">/mo</span>
+            </div>
+
+            <ul class="features">
+                <li><span class="checkmark">&#10003;</span> 50 Projects</li>
+                <li><span class="checkmark">&#10003;</span> 100GB Storage</li>
+                <li><span class="checkmark">&#10003;</span> Priority Support</li>
+            </ul>
+
+            <button class="btn">Choose Plan</button>
+        </div>
+    </div>
+
+</body>
+</html>

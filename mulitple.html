@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Book Categories</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f9f9f9;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .category-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+            gap: 15px; /* Space between items for clear separation */
+            width: 600px;
+        }
+
+        .category-box {
+            background-color: #e0e0e0;
+            border: 1px solid #999;
+            padding: 30px 20px;
+            text-align: center;
+            font-weight: bold;
+            color: #333;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Library Book Categories</h2>
+
+    <div class="category-container">
+        <div class="category-box">Science</div>
+        <div class="category-box">Mathematics</div>
+        <div class="category-box">History</div>
+        <div class="category-box">Literature</div>
+        <div class="category-box">Technology</div>
+        <div class="category-box">Arts</div>
+    </div>
+
+</body>
+</html>
